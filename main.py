@@ -1103,9 +1103,34 @@ async def text_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'🎞️𝐓𝐢𝐭𝐥𝐞 » `{name} [{res}].mp4`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
-                cc1 = f'📕𝐓𝐢𝐭𝐥𝐞 » `{name}`\n🔗𝐋𝐢𝐧𝐤 » <a href="{link}">__**CLICK HERE**__</a>\n\n🌟𝐄𝐱𝐭𝐫𝐚𝐜𝐭𝐞𝐝 𝐁𝐲 » `{CREDIT}`'
-                  
+              cc = (f"<b>🎞️ 𝗩𝗶𝗱𝗲𝗼 𝗡𝗮𝗺𝗲 :</b>\n"
+    f"<code>{name} [{res}p].mp4</code>\n\n"
+    f"<b>🧾 𝗙𝗶𝗹𝗲 𝗙𝗼𝗿𝗺𝗮𝘁 :</b> <code>MP4 - {res}p HD</code>\n"
+    f"<b>📁 𝗖𝗮𝘁𝗲𝗴𝗼𝗿𝘆 :</b> <code>Course Lecture</code>\n"
+    f"<b>🔒 𝗘𝗻𝗰𝗿𝘆𝗽𝘁𝗶𝗼𝗻 :</b> <code>{'Bypassed ✅'}</code>\n"
+    f"<b>📡 𝗦𝘁𝗮𝘁𝘂𝘀 :</b> <code>Live 🔵 | Direct Link</code>\n"
+    f"<b>⏳ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗲𝗱 :</b> <code>Successfully Decrypted</code>\n\n"
+    f"<b>🔗 𝗪𝗮𝘁𝗰𝗵 / 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 :</b>\n"
+    f"<a href='{link}'>🎯 <b>CLICK HERE</b></a>\n\n"
+    f"<b>👤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :</b> <i>{CREDIT}</i>\n"
+    f"<b>🚀 𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆 :</b> <a href='https://t.me/botupdatevip'>@botupdatevip</a>\n"
+    f"<b>🧠 𝗕𝗼𝘁 𝗘𝗻𝗴𝗶𝗻𝗲 :</b> <code>DeepExtractor AI</code>")
+
+cc1 = (f"<b>📘 𝗙𝗶𝗹𝗲 𝗡𝗮𝗺𝗲 :</b>\n"
+    f"<code>{name}</code>\n\n"
+    f"<b>📄 𝗙𝗶𝗹𝗲 𝗧𝘆𝗽𝗲 :</b> <code>PDF / Document</code>\n"
+    f"<b>📦 𝗦𝗶𝘇𝗲 :</b> <code>Auto-detect</code>\n"
+    f"<b>🔐 𝗗𝗥𝗠 :</b> <code>Not Applicable</code>\n"
+    f"<b>📡 𝗦𝘁𝗮𝘁𝘂𝘀 :</b> <code>Available ✅</code>\n"
+    f"<b>⏱️ 𝗣𝗿𝗼𝗰𝗲𝘀𝘀𝗲𝗱 :</b> <code>Decrypted & Ready</code>\n\n"
+    f"<b>🔗 𝗙𝗶𝗹𝗲 𝗟𝗶𝗻𝗸 :</b>\n"
+    f"<a href='{link}'>📥 <b>CLICK TO OPEN</b></a>\n\n"
+    f"<b>👤 𝗨𝗽𝗹𝗼𝗮𝗱𝗲𝗱 𝗕𝘆 :</b> <i>{CREDIT}</i>\n"
+    f"<b>📢 𝗢𝗳𝗳𝗶𝗰𝗶𝗮𝗹 𝗕𝗼𝘁 :</b> <a href='https://t.me/botupdatevip'>@botupdatevip</a>\n"
+    f"<b>🧠 𝗔𝗜 𝗘𝗻𝗴𝗶𝗻𝗲 :</b> <code>DocumentExtractor v3.2</code>")
+
+
+    
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
